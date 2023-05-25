@@ -3,6 +3,7 @@ package it.itispaleocapa;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.fail;
 import java.util.*;
 public class AppTest {
     private RegistroElettronico registro;
@@ -115,8 +116,8 @@ public class AppTest {
         registro.registraVoto("bonacinaGiorgio", "italiano", 7);
         registro.registraVoto("chandraAdam", "italiano", 2);
         LinkedList<String> l=new LinkedList<String>();
-        l.add("bonacinaGiorgio");
         l.add("chandraAdam");
+        l.add("bonacinaGiorgio");
         assertEquals(l, registro.alunniMediaMateriaInsufficiente());
     }
     @Test
