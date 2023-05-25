@@ -1,10 +1,14 @@
 package it.itispaleocapa;
-
-import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.fail;
 import java.util.*;
-public class AppTest {
+
+import org.junit.Test;
+
+
+public class RegistroTest {
     private RegistroElettronico registro;
 
     
@@ -131,3 +135,4 @@ public class AppTest {
         assertEquals(l, registro.alunniMediaMateriaInsufficiente());
     }
 }
+
