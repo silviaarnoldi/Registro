@@ -80,7 +80,14 @@ public class Aeroporto {
 
         throw new ClienteNullException();
     }
-
+    public Cliente ricercaClienteCodice(String codiceCliente) {
+        for (Cliente cliente : clienti) {
+            if (cliente.codiceCliente.equals(codiceCliente)) {
+                return cliente;
+            }
+        }
+        return null;
+    }
     public Cliente ricercaClienteCognomeNome(String cognome, String nome) {
         for (Cliente cliente : clienti) {
             if (cliente.cognome.equals(cognome) && cliente.nome.equals(nome)) {
