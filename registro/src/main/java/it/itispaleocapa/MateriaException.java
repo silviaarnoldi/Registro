@@ -1,5 +1,5 @@
 package it.itispaleocapa;
-public class MateriaException extends Exception
+public class ClienteNullException extends Exception
 {
    
 }
